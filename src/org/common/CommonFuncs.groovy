@@ -2,6 +2,7 @@ package org.common
 
 class CommonFuncs {
     def sayHi() {
+	sh 'ls -l'
         echo "Hi from CommonFuncs!"
     }
 
