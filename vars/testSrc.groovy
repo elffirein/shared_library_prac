@@ -1,4 +1,4 @@
 def call() {
-    def tst = new org.common.CommonFuncs()
+    def tst = new org.common.CommonFuncs.CommonFuncs()
     return tst.sayHi()
 }
