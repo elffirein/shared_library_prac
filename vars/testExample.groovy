@@ -1,5 +1,6 @@
+package org.common.ExampleClass
+
 def call() {
-	def example = new org.common.ExampleClass()
-	def instance = example.getInstance()
+	def instance = example.newInstance()
 	return instance.sayHi()
 }
