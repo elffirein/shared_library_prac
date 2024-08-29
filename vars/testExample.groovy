@@ -1,6 +1,5 @@
-import org.common.ExampleClass
-
 def call() {
-	def instance = ExampleClass.getInstance()
-	instance.sayHi()
+	def example = new org.common.ExampleClass
+	def instance = example.getInstance()
+	return instance.sayHi()
 }
