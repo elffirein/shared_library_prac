@@ -1,3 +1,7 @@
+import xyz.tomod.GlobalVars
+
+
 def call(String name = 'Human') {
-	echo "Hello, ${xyz.tomod.GlobalVars.foo} ."	
+	def fooVar = new GlobalVars()
+	echo "Hello, ${fooVar.foo} ."	
 }
