@@ -1,5 +1,5 @@
 package xyz.tomod
 
-class GlobalVars {
-	static String foo = "bar"
+def testVer() {
+	echo "Hello World"
 }
