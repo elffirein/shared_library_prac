@@ -1,7 +1,7 @@
 import xyz.tomod.GlobalVars
 
 
-def call(String name = 'Human') {
+def call(body) {
 	def fooVar = new GlobalVars()
 	fooVar.testVer()	
 }
