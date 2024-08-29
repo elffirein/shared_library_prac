@@ -1,12 +1,11 @@
 package org.common
 
-class CommonFuncs {
-    def sayHi() {
-	sh 'ls -l'
-        echo "Hi from CommonFuncs!"
+class CommonFuncs implements Serializable {
+    def call(def pipeline, String name) {
+        return exec(pipeline, name)
     }
 
-    def sayHello(str) {
-        echo "Hello ${str}"
+    def exec(def pipeline, String name) {
+        pipeline.echo "Hello ${name}!"
     }
 }
