@@ -8,7 +8,7 @@ def call(body) {
     stages {
       stage('build') {
         steps {
-          utils.build("${pipelineParams.branch}")
+		sh 'echo "Test foo"'
         }
       }
     }
