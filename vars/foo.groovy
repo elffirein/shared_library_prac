@@ -16,6 +16,7 @@ def call(body) {
 		sh 'echo "Test foo"'
 		script {
 			example.sayHi()
+			second.sayHello()
 		}
         }
       }
