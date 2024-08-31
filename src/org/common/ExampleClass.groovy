@@ -1,4 +1,4 @@
-package org.common.ExampleClass
+package org.common
 
 import com.cloudbees.groovy.cps.NonCPS
 
