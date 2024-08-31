@@ -11,8 +11,10 @@ def call(body) {
       stage('build') {
         steps {
 		sh 'echo "Test foo"'
-		def example = new ExampleClass()
-		example.sayHi()
+		script {
+			def example = new ExampleClass()
+			example.sayHi()
+		}
         }
       }
     }
