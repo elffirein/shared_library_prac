@@ -1,7 +1,7 @@
 package org.common
 
 import com.cloudbees.groovy.cps.NonCPS
-import SecondClass
+import org.common.SecondClass
 
 @NonCPS
 def sayHi() {
