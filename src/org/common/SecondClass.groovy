@@ -1,7 +1,7 @@
 package org.common
 
 class SecondClass {
-	def sayHello() {
-		println("Hello Jenkins")	
+	String sayHello() {
+		return "Hello Jenkins"
 	}
 }
