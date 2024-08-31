@@ -4,7 +4,7 @@ import org.common.SecondClass
 def call(body) {
   def pipelineParams= [:]
   def example = new ExampleClass()
-  def second = new SecondClass()
+  def second = new SecondClass.SecondClass()
   body.resolveStrategy = Closure.DELEGATE_FIRST
   body.delegate = pipelineParams
   body()
@@ -16,8 +16,6 @@ def call(body) {
 		sh 'echo "Test foo"'
 		script {
 			example.sayHi()
-			sec = second.newInstance()
-			sec.sayHello()
 		}
         }
       }
