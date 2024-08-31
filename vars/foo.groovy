@@ -16,7 +16,7 @@ def call(body) {
 		sh 'echo "Test foo"'
 		script {
 			example.sayHi()
-			sec = second.createInstance()
+			sec = second.newInstance()
 			sec.sayHello()
 		}
         }
