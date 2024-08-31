@@ -1,5 +1,8 @@
+import org.common.ExampleClass
+
 def call(body) {
   def pipelineParams= [:]
+  def example = new ExampleClass()
   body.resolveStrategy = Closure.DELEGATE_FIRST
   body.delegate = pipelineParams
   body()
@@ -10,7 +13,6 @@ def call(body) {
         steps {
 		sh 'echo "Test foo"'
 		script {
-			def example = new org.common.ExampleClass()
 			example.sayHi()
 		}
         }
